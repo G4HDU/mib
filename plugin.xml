@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e107Plugin name="MIB Plugin" lan="LAN_PLUGIN_MIB_NAME" version="2.0" date="2018-01-11" compatibility="2.0" installRequired="true" >
+	<author name="Barry Keal G4HDU" url="http://keal.me.uk" />
+	<summary>MIB Management System</summary>
+	<description lan="LAN_PLUGIN_MIB_DIZ">Message in a Bottle Monitoring.</description>
+	<category>misc</category>
+	<keywords>
+		<word>blank</word>
+		<word>empty</word>
+		<word>template</word>
+	</keywords>
+	<screenshots>
+		<image></image>
+	</screenshots>
+	<adminLinks>
+		<link url='admin_config.php' description='Configure MIB Plugin' icon='images/mib_32.png' iconSmall='images/mib_16.png' icon128="images/mib_128.png" primary='true' >LAN_CONGIGURE</link>
+		<link url="admin_config.php?mode=options" description="Configure MIB Prefs" icon="manage" >MIB Prefs</link>
+	</adminLinks>
+	<siteLinks>
+		<link url="{e_PLUGIN}mib/index.php" perm='everyone' sef='miab'>LAN_PLUGIN_MIB_LINK</link>
+	</siteLinks>
+	<pluginPrefs>
+		<pref name="perpage">20</pref>
+		<pref name="viewClass">255</pref>
+	</pluginPrefs>
+	<userClasses>
+		<class name="mib_userclass" description="MIB View Class" />		
+	</userClasses>
+</e107Plugin>
